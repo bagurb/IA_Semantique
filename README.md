@@ -11,6 +11,7 @@ PARTIE 1
 - Finir le listage des concepts
 - Trouver des relations entre les concepts
 - Commencer l'écriture des axiomes pour réaliser l'ontologie
+
 PARTIE 2
 - Ecriture des axiomes dans le logiciel Protéger
 - Maintenir à jour le rapport
