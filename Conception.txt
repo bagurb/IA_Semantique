@@ -1,0 +1,21 @@
+10/03/2022
+
+ONTOLOGIE IA
+
+Concept :
+
+PART I page(1 - 4)
+- DataSet
+	linearly separable
+	
+- Learning algorithms
+	Hypothesis
+		Nearest Neighbor
+		Decision Tree
+		Linear
+- Equation
+	Linear equation
+	
+- Class
+	A Class is predicted by ...
+- Decision Boundary
