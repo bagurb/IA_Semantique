@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/pc/ontologies/2022/3/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/pc/ontologies/2022/3/untitled-ontology-2">
+    <Prefix name="" IRI="http://www.semanticweb.org/pc/ontologies/2022/3/untitled-ontology-2"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Algorithme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Categorical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Decision_Tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gradient_Descent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nearest_Neighbor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Numerical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outpout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Perceptron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prediction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SVM_Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Training_Algorithme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBeOfTypeCategorical"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canBeOfTypeNumerical"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInputOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOutputOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Categorical"/>
+        <Class IRI="#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classification"/>
+        <Class IRI="#Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decision_Tree"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gradient_Descent"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Input"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Model"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Model"/>
+        <Class IRI="#Training_Algorithme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nearest_Neighbor"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Numerical"/>
+        <Class IRI="#DataType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outpout"/>
+        <Class IRI="#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Perceptron"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prediction"/>
+        <Class IRI="#Outpout"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regression"/>
+        <Class IRI="#Problem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVM_Model"/>
+        <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Training_Algorithme"/>
+        <Class IRI="#Algorithme"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canBeOfTypeCategorical"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canBeOfTypeNumerical"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInput"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOutput"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInputOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOutputOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInput"/>
+        <ObjectProperty IRI="#isInputOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOutput"/>
+        <ObjectProperty IRI="#isOutputOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canBeOfTypeCategorical"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#canBeOfTypeNumerical"/>
+        <Class IRI="#Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInput"/>
+        <Class IRI="#Algorithme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOutput"/>
+        <Class IRI="#Algorithme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInputOf"/>
+        <Class IRI="#Input"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOutputOf"/>
+        <Class IRI="#Outpout"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canBeOfTypeCategorical"/>
+        <Class IRI="#Categorical"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#canBeOfTypeNumerical"/>
+        <Class IRI="#Numerical"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInput"/>
+        <Class IRI="#Input"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOutput"/>
+        <Class IRI="#Outpout"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInputOf"/>
+        <Class IRI="#Algorithme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOutputOf"/>
+        <Class IRI="#Algorithme"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#canBeOfTypeCategorical"/>
+        <ObjectProperty IRI="#canBeOfTypeNumerical"/>
+    </DisjointObjectProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
