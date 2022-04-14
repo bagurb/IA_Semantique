@@ -19,9 +19,6 @@
         <Class IRI="#Categorical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Classification"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Data"/>
     </Declaration>
     <Declaration>
@@ -31,7 +28,13 @@
         <Class IRI="#Decision_Tree"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Gradient_Descent"/>
+        <Class IRI="#Decision_Tree_Hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gradient_Boosting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gradient_Boosting_Hypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hypothesis"/>
@@ -40,13 +43,25 @@
         <Class IRI="#Input"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Inter_Class_Optimizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intra_Class_Optimizer"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Linear_Model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linear_Model_Hypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Model"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Nearest_Neighbor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nearest_Neighbor_Hypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Numerical"/>
@@ -58,19 +73,22 @@
         <Class IRI="#Perceptron"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Perceptron_Hypothesis"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Prediction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Problem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Regression"/>
+        <Class IRI="#SVM_Hypothesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SVM_Model"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Training_Algorithme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Generate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#canBeOfTypeCategorical"/>
@@ -85,6 +103,9 @@
         <ObjectProperty IRI="#hasOutput"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isGeneratedby"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isInputOf"/>
     </Declaration>
     <Declaration>
@@ -93,26 +114,42 @@
     <SubClassOf>
         <Class IRI="#Categorical"/>
         <Class IRI="#DataType"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Classification"/>
-        <Class IRI="#Problem"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Decision_Tree"/>
         <Class IRI="#Model"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Gradient_Descent"/>
+        <Class IRI="#Decision_Tree_Hypothesis"/>
+        <Class IRI="#Inter_Class_Optimizer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gradient_Boosting"/>
         <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gradient_Boosting_Hypothesis"/>
+        <Class IRI="#Inter_Class_Optimizer"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Input"/>
         <Class IRI="#Data"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Inter_Class_Optimizer"/>
+        <Class IRI="#Hypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intra_Class_Optimizer"/>
+        <Class IRI="#Hypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Linear_Model"/>
         <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linear_Model_Hypothesis"/>
+        <Class IRI="#Intra_Class_Optimizer"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Model"/>
@@ -121,6 +158,10 @@
     <SubClassOf>
         <Class IRI="#Nearest_Neighbor"/>
         <Class IRI="#Model"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nearest_Neighbor_Hypothesis"/>
+        <Class IRI="#Intra_Class_Optimizer"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Numerical"/>
@@ -135,12 +176,16 @@
         <Class IRI="#Model"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Perceptron_Hypothesis"/>
+        <Class IRI="#Inter_Class_Optimizer"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Prediction"/>
         <Class IRI="#Outpout"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Regression"/>
-        <Class IRI="#Problem"/>
+        <Class IRI="#SVM_Hypothesis"/>
+        <Class IRI="#Inter_Class_Optimizer"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SVM_Model"/>
@@ -150,6 +195,52 @@
         <Class IRI="#Training_Algorithme"/>
         <Class IRI="#Algorithme"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Algorithme"/>
+        <Class IRI="#Data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Algorithme"/>
+        <Class IRI="#DataType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Algorithme"/>
+        <Class IRI="#Hypothesis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Categorical"/>
+        <Class IRI="#Numerical"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Decision_Tree"/>
+        <Class IRI="#Gradient_Boosting"/>
+        <Class IRI="#Linear_Model"/>
+        <Class IRI="#Nearest_Neighbor"/>
+        <Class IRI="#Perceptron"/>
+        <Class IRI="#SVM_Model"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Decision_Tree_Hypothesis"/>
+        <Class IRI="#Gradient_Boosting_Hypothesis"/>
+        <Class IRI="#Perceptron_Hypothesis"/>
+        <Class IRI="#SVM_Hypothesis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Input"/>
+        <Class IRI="#Outpout"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Inter_Class_Optimizer"/>
+        <Class IRI="#Intra_Class_Optimizer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Linear_Model_Hypothesis"/>
+        <Class IRI="#Nearest_Neighbor_Hypothesis"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Generate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#canBeOfTypeCategorical"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -167,6 +258,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isGeneratedby"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isInputOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -175,6 +270,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#Generate"/>
+        <ObjectProperty IRI="#isGeneratedby"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasInput"/>
         <ObjectProperty IRI="#isInputOf"/>
     </InverseObjectProperties>
@@ -182,6 +281,10 @@
         <ObjectProperty IRI="#hasOutput"/>
         <ObjectProperty IRI="#isOutputOf"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Generate"/>
+        <Class IRI="#Hypothesis"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#canBeOfTypeCategorical"/>
         <Class IRI="#Data"/>
@@ -197,6 +300,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOutput"/>
         <Class IRI="#Algorithme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGeneratedby"/>
+        <Class IRI="#Model"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInputOf"/>
@@ -206,6 +313,10 @@
         <ObjectProperty IRI="#isOutputOf"/>
         <Class IRI="#Outpout"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Generate"/>
+        <Class IRI="#Model"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#canBeOfTypeCategorical"/>
         <Class IRI="#Categorical"/>
@@ -221,6 +332,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasOutput"/>
         <Class IRI="#Outpout"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGeneratedby"/>
+        <Class IRI="#Hypothesis"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInputOf"/>

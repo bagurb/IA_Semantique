@@ -6,7 +6,8 @@ Concept :
 
 PART I page(1 - 4)
 - DataSet
-	linearly separable
+	Point (Observation)
+	Linearly separable
 	
 - Learning algorithms
 	Hypothesis
@@ -15,7 +16,10 @@ PART I page(1 - 4)
 		Linear
 - Equation
 	Linear equation
-	
+
 - Class
 	A Class is predicted by ...
 - Decision Boundary
+
+Axiome :
+
